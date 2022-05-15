@@ -1,2 +1,2 @@
 # type-challenges-demo
-type-challenges刷题
+type-challenges类型体操刷题
