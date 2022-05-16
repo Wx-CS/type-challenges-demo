@@ -4,12 +4,12 @@ type MyPick<T, K extends keyof T> = {
 
 
 // js
-function MyPick(todo, keys) {
-  const obj = {};
-  keys.forEach(key => {
-    if (key in todo) {
-      obj[key] = todo[key];
-    }
-  })
-  return obj;
-}
+// function MyPick(todo, keys) {
+//   const obj = {};
+//   keys.forEach(key => {
+//     if (key in todo) {
+//       obj[key] = todo[key];
+//     }
+//   })
+//   return obj;
+// }
