@@ -1,0 +1,1 @@
+type AppendArgument<Fn, A> = Fn extends (...params: infer PT) => infer RT ? (...params: [...PT, A]) => RT : never
