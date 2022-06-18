@@ -1,0 +1,1 @@
+type PartialByKeys<T, K extends keyof any = string> = Omit<{[k in K & keyof T]?: T[k]} & Omit<T, K>, never>
