@@ -1,0 +1,1 @@
+type FlipArguments<T extends (...params: any[]) => any> = T extends (...params: infer P) => infer R ? (...params: Reverse<P>) => R : T
