@@ -1,0 +1,2 @@
+type Chunk <T extends unknown[], N extends number, U extends unknown[] = []> = 
+T extends [infer L, ...infer R] ? U['length'] extends N ? [U, ...Chunk<R, N, [L]>] : Chunk<R, N, [...U, L]> : U extends [] ? [] : [U];
